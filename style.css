@@ -1,0 +1,146 @@
+ body.light-mode {
+     background-color: #ffffff;
+     color: #000000;
+ }
+
+body.light-mode input,
+body.light-mode textarea {
+    color: #000;
+    background-color: #fff;
+}
+
+ body.dark-mode {
+     background-color: #000000;
+     color: #ffffff;
+ }
+
+ body.dark-mode input,
+body.dark-mode textarea {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+ body.light-mode .menu-line {
+     background-color: #000;
+     /* black for light mode */
+ }
+
+ body.dark-mode .menu-line {
+     background-color: #fff;
+     /* white for dark mode */
+ }
+
+ body.light-mode .submit {
+     color: white;
+     background-color: #000;
+     /* black for light mode */
+ }
+
+ body.dark-mode .submit {
+     background-color: #fff;
+     color: black;
+     /* white for dark mode */
+ }
+
+ body.light-mode .pg-4 {
+     color: rgb(0, 0, 0);
+
+     /* black for light mode */
+ }
+
+ body.dark-mode .pg-4 {
+     color: black;
+     /* white for dark mode */
+ }
+
+
+ body.dark-mode #car1:hover {
+     box-shadow: 6px 6px white;
+     background-color: #3e210341;
+ }
+
+ body.dark-mode #car2:hover {
+     box-shadow: 6px 6px white;
+        background-color: #3e210341;
+ }
+
+ body.dark-mode #car3:hover {
+     box-shadow: 6px 6px white;
+        background-color: #3e210341;
+ }
+
+ body.dark-mode #car4:hover {
+     box-shadow: 6px 6px white;
+        background-color: #3e210341;
+ }
+
+ body.dark-mode #car1>#car-1 {
+     color: white;
+ }
+
+ body.dark-mode #car2>#car-2 {
+     color: white;
+ }
+
+ body.dark-mode #car3>#car-3 {
+     color: white;
+ }
+
+ body.dark-mode #car4>#car-4 {
+     color: white;
+ }
+
+ body.dark-mode #carii1:hover {
+     box-shadow: 6px 6px white;
+     background-color: #3e210341;
+ }
+
+ body.dark-mode #carii2:hover {
+     box-shadow: 6px 6px white;
+     background-color: #3e210341;
+ }
+
+ body.dark-mode #carii3:hover {
+     box-shadow: 6px 6px white;
+     background-color: #3e210341;
+ }
+
+ 
+ 
+
+
+
+ #menubtn span {
+     transition: all 0.3s ease-in-out;
+     transform-origin: left center;
+ }
+
+ #menubtn.active #line1 {
+     transform: rotate(45deg);
+     background: #505050;
+ }
+
+ #menubtn.active #line2 {
+     opacity: 0;
+     background: #505050;
+ }
+
+ #menubtn.active #line3 {
+     transform: rotate(-45deg);
+     background: #505050;
+ }
+
+ #work-1 {
+     transition: all 0.3s ease-in-out;
+     transform: translateX(100%);
+
+ }
+
+ #work-1.active {
+     transform: translateX(0%);
+
+ }
+
+
+
+ 

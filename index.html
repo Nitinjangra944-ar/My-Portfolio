@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Setup</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body class="light-mode ">
+  <!-- page-1 ✔️ complete responsive -->
+  <header class="overflow-hidden">
+    <!-- navigation bar -->
+    <nav id="navi"
+      class="fixed z-90 flex items-center justify-between w-screen p-6  pb-4 md:px-12 lg:px-18 xl:px-25 2xl:px-50 ">
+      <h1 class="font-bold text-4xl xl:text-5xl">nitin<span class="text-[#573322]">.</span></h1>
+
+      <ul id="mdinfo" class=" hidden  md:flex justify-center items-center gap-5 font-semibold rounded-full px-6 py-3">
+        <li id="home1"><a href="#!">Home</a></li>
+        <li id="about1"><a href="#!">About me </a></li>
+        <li id="service1"><a href="#!">Service</a></li>
+        <li id="mywork1"><a href="#!">My work</a></li>
+        <li id="contacta"><a href="#!">Contact me</a></li>
+      </ul>
+
+      <div class="flex justify-between items-center gap-8">
+        <img id="moonicon" class="size-6" src="assets/moon_icon.png" alt="">
+        <img id="sunicon" class="size-6" src="assets/sun_icon.png" alt="">
+        <!-- hide in mobile view -->
+        <button id="contactb"
+          class=" group hidden lg:flex justify-center items-center border p-2 px-4 rounded-full font-semibold ">contact
+          me <span class=" px-3 scale-150 group-hover:rotate-45 transition-all ease font-semibold">⇀</span></button>
+
+        <!-- menu button -->
+
+        <button id="menubtn" class="md:hidden flex flex-col justify-center items-center gap-2 z-100">
+          <span id="line1" class="w-8 h-1 bg-black rounded-full menu-line"></span>
+          <span id="line2" class="w-6 h-1 bg-black rounded-full self-end menu-line"></span>
+          <span id="line3" class="w-8 h-1 bg-black rounded-full menu-line"></span>
+        </button>
+        <!-- hidden section -->
+        <aside id="work-1"
+          class="  absolute  bg-[#9b9a9aa8] top-0 right-0 w-1/2 sm:w-1/3 h-screen p-8 pt-20 list-none flex flex-col gap-6 ">
+          <li id="home2"><a href="#!">Home</a></li>
+          <li id="about2"><a href="#!">About me </a></li>
+          <li id="service2"><a href="#!">Service</a></li>
+          <li id="mywork2"><a href="#!">My work</a></li>
+          <li id="contactd"><a href="#!">Contact me</a></li>
+        </aside>
+
+      </div>
+    </nav>
+  </header>
+  <div class="px-8 md:px-12 lg:px-18 xl:px-25 2xl:px-50">
+    <!-- sec after navigation -->
+    <div id="home" class="max-w-3xl mx-auto h-screen flex flex-col items-center justify-center  gap-4  ">
+      <!--profile pic  -->
+      <div>
+        <div class="w-40 h-40 rounded-full bg-cover  bg-[#d8d5d5c6] overflow-hidden shadow-[0_0_90px_#ADADAD] ">
+          <img src="assets/hiji.png" class="scale-125 " alt="">
+        </div>
+        <h2 class="mt-4 font-semibold text-xl md:text-2xl  ">Hi! i'm Nitin 👋🏼</h2>
+      </div>
+      <!--about me section-->
+
+      <div class="  text-center  ">
+
+        <h1 class="text-4xl sm:text-6xl xl:text-7xl ">frontend web developer based in India.</h1>
+
+        <p class="pt-8 font-semibold lg:text-xl">I am a frontend from Haryan, India with 2 years of experience in
+          multiple
+          companies like Ather, Bikaji, Techside. </p>
+
+      </div>
+
+      <!-- link buttton -->
+      <div class="flex flex-col justify-center items-center gap-6  mt-10 sm:flex-row ">
+        <button id="contactc"
+          class=" group  flex justify-center items-center   rounded-4xl  font-semibold px-4 bg-gradient-to-r from-[#452415] to-[#8B4513] text-white py-3">contact
+          me <span
+            class="px-3 scale-150 group-hover:rotate-45 group-active:rotate-45 transition-all ease ">⇀</span></button>
+        <button>
+          <a href="assets/resume.jpeg" target="_blank"
+            class="flex justify-center items-center gap-4 border-2 rounded-4xl  hover:scale-105 active:scale-105 transition-all ease font-semibold px-4 py-3 ">My
+            resume
+            <img id="downwhite" class="size-6" src="assets/download.svg" alt="download">
+            <img id="downblack" class="size-6" src="assets/download - Copy.svg" alt="download">
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <!-- page2 ✔️ responsive -->
+    <div id="about" class="  max-w-7xl mx-auto  ">
+
+      <div class="flex flex-col items-center justify-center gap-2  ">
+        <h2 class="text-xl ">introduction</h2>
+        <h1 class="text-5xl">About me</h1>
+      </div>
+
+
+      <!-- image portion -->
+      <div class="flex flex-col items-center lg:flex-row gap-15 xl:gap-25  my-20 sm:p-10 md:p-15 ">
+        <!-- image1pro -->
+        <div class=" relative  bg-[#d8d5d5c6] rounded-3xl flex justify-center mr-10  ">
+          <img class="z-50 h-100 w-60 xl:h-150 xl:w-90 object-cover object-top" src="assets/nitin.png" alt="">
+
+          <img
+            class=" absolute -right-20  bottom-10 xl:-right-30 xl:bottom-15 size-50 xl:size-75 bg-[#d8d5d5c6] rounded-full animate-spin [animation-duration:6s] shadow-[0_0_90px_#ADADAD] "
+            src="assets/circular-text.png" alt="circle">
+
+        </div>
+
+        <!-- paragraph , info protion -->
+        <div class="flex-1 flex flex-col  gap-10   ">
+          <p class="leading-loose  ">
+            I am an experienced Frontend Developer with over a decade of
+            professional expertise in the field. Throughout my
+            career, I have had the privilege of collaborating with prestigious organizations, contributing to their
+            success and growth.</p>
+          <!-- 3 cards -->
+          <div class="grid sm:grid-cols-3 gap-5">
+            <!-- card-1 -->
+            <div id="carii1"
+              class="flex flex-wrap justify-center flex-col items-start gap-5 border     p-6 rounded-2xl  text-gray-600 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000] active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000] transition-all duration-300 ease overflow-hidden">
+              <img class="size-8" src="assets/code-icon.png" alt="">
+              <h2 class="text-2xl font-semibold">languages</h2>
+              <p>HTML, CSS, JavaScript, React Js, next.js</p>
+            </div>
+            <!-- card-2 -->
+            <div id="carii2" class="flex justify-center flex-col items-start gap-5 border   p-6 rounded-2xl  text-gray-600 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000] active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000] transition-all duration-300 ease
+          overflow-hidden ">
+              <img class="size-8" src="assets/edu-icon.png" alt="">
+              <h2 class="text-2xl font-semibold  ">Education</h2>
+              <p>Bachelor of commerce</p>
+            </div>
+            <!-- card-3 -->
+            <div id="carii3"
+              class="flex justify-center flex-col items-start gap-5 border     p-6 rounded-2xl  text-gray-600 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000] active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000]  transition-all duration-300 ease">
+              <img class="size-8" src="assets/project-icon.png" alt="">
+              <h2 class="text-2xl font-semibold  ">Projects</h2>
+              <p>Built more than 5 big projects</p>
+            </div>
+          </div>
+          <p class="text-2xl text-gray-600 xl:mt-10 ">Tool i use</p>
+          <!-- icons -->
+          <div class="flex gap-3 sm:gap-6 2xl:gap-9 ">
+            <img
+              class="w-15 h-15 border border-gray-600 rounded-2xl p-3  hover:-translate-y-2 transition-all duration-50 ease active:scale-105"
+              src="assets/vscode.png" alt="">
+            <img
+              class="w-15 h-15 border border-gray-600 rounded-2xl p-3 hover:-translate-y-2 transition-all duration-50 ease active:scale-105"
+              src="assets/firebase.png" alt="">
+            <img
+              class="w-15 h-15 border border-gray-600 rounded-2xl p-3 hover:-translate-y-2 transition-all duration-50 ease active:scale-105"
+              src="assets/mongodb.png" alt="">
+            <img
+              class="w-15 h-15 border border-gray-600 rounded-2xl p-3 hover:-translate-y-2 transition-all duration-50 ease active:scale-105"
+              src="assets/figma.png" alt="">
+            <img
+              class="w-15 h-15 border border-gray-600 rounded-2xl p-3 hover:-translate-y-2 transition-all duration-50 ease active:scale-105"
+              src="assets/git.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page-3 ✔️responsive -->
+
+    <div id="service" class="my-40 flex flex-col items-center gap-10 ">
+
+      <div class=" leading-loose text-center gap-4 max-w-3xl mx-auto ">
+        <p class="text-xl">what i offer</p>
+        <h1 class="text-5xl">My services</h1>
+        <p class="mt-5">I am a frontend developer from Haryana, India with 2 years of experience in multiple companies
+          like Ather, Bikaji and teahside.</p>
+      </div>
+      <!-- 4 cards -->
+      <div class=" grid sm:grid-cols-2 xl:grid-cols-4  gap-10 pb-5  ">
+        <!-- card-1 -->
+        <div id="car1" class="border  border-gray-600 px-6 py-10 rounded-2xl text-gray-600 flex flex-col justify-center items-start gap-5 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000] active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000] transition-all duration-300 ease 
+          ">
+          <img class="size-15" src="assets/web-icon.png" alt="">
+          <h1 class="text-[20px]">Web design</h1>
+          <p>Web development is the process of building, programming...</p>
+          <div id="car-1" class="text-black ">Read more <span class="text-gray-600">⇀</span></div>
+        </div>
+        <!-- card-2 -->
+        <div id="car2"
+          class="border  border-gray-600 px-6 py-10 rounded-2xl text-gray-600 flex flex-col justify-center items-start gap-5 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000]  active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000] transition-all duration-300 ease">
+          <img class="size-15" src="assets/mobile-icon.png " alt="">
+          <h1 class="text-[20px]">mobile app</h1>
+          <p>Web development is the process of building, programming...</p>
+          <div id="car-2" class="text-black ">Read more <span class="text-gray-600">⇀</span></div>
+
+        </div>
+        <!-- card-3 -->
+        <div id="car3"
+          class="border border-gray-600 px-6 py-10 rounded-2xl text-gray-600 flex flex-col justify-center items-start gap-5 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000]  active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000] transition-all duration-300 ease">
+          <img class="size-15" src="assets/ui-icon.png " alt="">
+          <h1 class="text-[20px]">UI/UX design</h1>
+          <p>Web development is the process of building, programming...</p>
+          <div id="car-3" class="text-black ">Read more <span class="text-gray-600">⇀</span></div>
+        </div>
+        <!-- card-4 -->
+        <div id="car4"
+          class="border  border-gray-600 px-6 py-10 rounded-2xl text-gray-600 flex flex-col justify-center items-start gap-5 hover:bg-[#e8d4cc48] 
+          hover:shadow-[6px_6px_0px_#000000]  active:bg-[#e8d4cc48] active:shadow-[6px_6px_0px_#000000] transition-all duration-300 ease">
+          <img class="size-15" src="assets/graphics-icon.png " alt="">
+          <h1 class="text-[20px]">Graphics design</h1>
+          <p>Web development is the process of building, programming...</p>
+          <div id="car-4" class="text-black ">Read more <span class="text-gray-600">⇀</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!--page-4  -->
+
+    <div id="mywork" class="flex flex-col items-center gap-15">
+      <div class=" text-center flex flex-col gap-5 max-w-3xl mx-auto ">
+        <p class="text-2xl">My portfolio</p>
+        <h1 class="text-5xl">My latest work </h1>
+        <p class="leading-loose">
+          Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end
+          development.
+        </p>
+      </div>
+      <!-- project cards -->
+      <div class=" grid sm:grid-cols-2 xl:grid-cols-4 gap-10  pb-5 ">
+        <!-- card-1 -->
+        <div class=" relative group transition all duration-300 ease-in-out aspect-square rounded-2xl flex flex-col justify-end
+           overflow-hidden  ">
+          <img class="absolute bottom-0 " src="assets/phone.jpg" alt="">
+          <div
+            class=" relative z-10 flex justify-between items-center border rounded-2xl m-8 mb-6 p-4  group-hover:-translate-y-2 group-active:-translate-y-2 bg-gray-50">
+            <div class=" pg-4 flex flex-col items-baseline justify-center">
+              <h1 class="font-semibold">Frontend project</h1>
+              <p>Web design</p>
+            </div>
+            <img class="mr-4  transition all duration-75 ease   hover:rotate-45 active:rotate-45"
+              src="assets/send-icon.png" alt="">
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div
+          class="relative group  transition all duration-300 ease-in-out   aspect-square  rounded-2xl flex flex-col  justify-end overflow-hidden ">
+          <img class="absolute bottom-0 " src="assets/map.jpg" alt="">
+          <div
+            class=" relative z-20 flex justify-between items-center border rounded-2xl m-8 mb-6 p-4  group-hover:-translate-y-2 group-active:-translate-y-2 bg-gray-50">
+            <div class=" pg-4 flex flex-col items-baseline justify-center">
+              <h1 class="font-semibold">Geo based app</h1>
+              <p>Mobile app</p>
+            </div>
+            <img class="mr-4  transition all duration-75 ease   hover:rotate-45 active:rotate-45"
+              src="assets/send-icon.png" alt="">
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div
+          class="group relative transition all duration-300 ease-in-out  aspect-square  rounded-2xl flex flex-col  justify-end overflow-hidden ">
+          <img class="absolute bottom-0 object-fill " src="assets/edit.jpg" alt="">
+          <div
+            class=" relative z-30 flex justify-between items-center border rounded-2xl m-8 mb-6 p-4  group-hover:-translate-y-2 group-active:-translate-y-2 bg-gray-50">
+            <div class=" pg-4 flex flex-col items-baseline justify-center">
+              <h1 class="font-semibold">Photography site</h1>
+              <p>Web design</p>
+            </div>
+            <img class="mr-4  transition all duration-75 ease   hover:rotate-45 active:rotate-45"
+              src="assets/send-icon.png" alt="">
+          </div>
+        </div>
+
+        <!-- card-4 -->
+        <div
+          class="group relative transition all duration-300 ease-in-out   rounded-2xl flex flex-col aspect-square justify-end overflow-hidden ">
+          <img class="absolute bottom-0 " src="assets/uiux.jpg" alt="">
+          <div
+            class=" relative z-40 flex justify-between items-center border rounded-2xl m-8 mb-6 p-4  group-hover:-translate-y-2 group-active:-translate-y-2 bg-gray-50">
+            <div class=" pg-4 flex flex-col items-baseline justify-center">
+              <h1 class="font-semibold">UI/UX designing</h1>
+              <p>UI/UX design</p>
+            </div>
+            <img class="mr-4  transition all duration-75 ease   hover:rotate-45 active:rotate-45"
+              src="assets/send-icon.png " alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- show button  -->
+      <div id="home3" class="flex justify-center items-center ">
+        <button
+          class="group flex justify-center items-center   rounded-4xl  font-semibold px-4 bg-gradient-to-r from-[#452415] to-[#8B4513] text-white py-3">show
+          more <span
+            class="px-3 scale-150 group-hover:rotate-45 transition-all ease group-active:rotate-45">⇀</span></button>
+      </div>
+    </div>
+    <!-- page-5 ✔️ responsive -->
+    <div id="contact" class=" text-center max-w-3xl mx-auto">
+      <div class=" mt-30  ">
+        <p class="text-xl">connect with me </p>
+        <h1 class="text-5xl">Get in touch</h1>
+        <p class="mt-8 leading-loose">I'd love to hear from you! If you have any questions, comments or feedback, please
+          use the form below.</p>
+      </div>
+
+      <form class=" flex flex-col gap-10 my-20 sm:mx-15 " method="POST">
+        <div class="grid gap-10 sm:grid-cols-2 ">
+          <input class="px-4 p-2 border border-gray-300 rounded-md  " type="text" name="name"
+            placeholder="Enter your name" required>
+
+          <input class="px-2 p-2 border border-gray-300 rounded-md " type="email" name="email"
+            placeholder="Enter your email" required>
+        </div>
+        <textarea class=" w-full px-4 p-2 pb-30 border border-gray-300 rounded-md " name="message"
+          placeholder="Enter your message" required></textarea>
+        <div>
+          <button class="submit mt-10 rounded-full lg:text-xl px-6 py-2 bg-black/80 text-white " type="submit">
+            submit now <span class="px-2 scale-150">⇀</span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- footer  ✔️responsive   -->
+
+    <footer class=" text-center gap-5 mt-40  ">
+      <h1 class="font-bold text-6xl">nitin<span class="text-[#573322]">.</span></h1>
+
+      <p class=" flex items-center justify-center font-semibold gap-2 ">
+        <img class="scale-40 " src="assets/mail_icon.png" alt="">
+        nitin@gmail.com
+      </p>
+      <hr class="w-full mt-10 ">
+      <div class="sm:flex sm:items-center sm:justify-between ">
+        <div class="text-xl text-center  ">
+          © 2026 Nitin. All rights reserved.
+        </div>
+        <div class="flex justify-center sm:justify-between gap-20 font-semibold items-center  my-5 ">
+          <h2>GitHub</h2>
+          <h2>Linkdin</h2>
+          <h2>twitter</h2>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
